@@ -71,7 +71,6 @@ const observer = new IntersectionObserver((entradas, observer) => {
             var position = 37*indexSeccionActiva;
             var tras = 'translateY('+position+'px)'
             subthene_indicator.style.transform = tras;
-            console.log(indexSeccionActiva)
             if(idea__controller+1 == indexSeccionActiva){
                 idea__controller = indexSeccionActiva;
                 scrollR();

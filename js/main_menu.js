@@ -1,10 +1,12 @@
 //MAIN Menu responsive
-function responsive(){
-    var screen = document.getElementById('windows');
-    var tamanio = parseInt(screen.clientWidth);
-    return tamanio
+const mql = matchMedia('(min-width: 800px)');
+const menu = mql => {
+    mql.matches ?
+        null
+        :
+        menu_movil()
 }
-if (responsive() < 800) {
+function menu_movil() {
     const menu__button = document.querySelector(".menu__button");
     const main_menu = document.querySelector(".main-menu");
     const main_menu__block = document.querySelector(".main-menu__block");
@@ -35,4 +37,5 @@ if (responsive() < 800) {
     });
 }
 
-
+addEventListener('resize', () => menu(mql))
+addEventListener('DOMContentLoaded', () => menu(mql))
