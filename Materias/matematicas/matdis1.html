@@ -1,101 +1,251 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/Icon/te-verde.png">
-    <title>TÉ cito - Matematicas Discretas 2😜🤟</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/main_menu.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/mate_calculo1.css">
+    <title>Té cito - Física 1😜💅</title>
+    <link rel="icon" href="../../assets/Icon/te-verde.png">
+    <link rel="stylesheet" href="../../css/main_menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 </head>
-<body>
+<body class="windows" onload="responsive()" onresize="responsive()">
     <header>
+        <a class="logo" href="../../index.html">
+            <img src="../../assets/Icon/logo.png" alt="Logo de Té cito">
+        </a>
+        <div class="menu__button">
+            <span class="btn__burger_1"></span>
+            <span class="btn__burger_2"></span>
+            <span class="btn__burger_3"></span>
+        </div>
         <nav class="main-menu">
-            <a class="main-menu__logo-container" href="/index.html">
-                <img class="main-menu__logo" src="/assets/Icon/logo.png">
-            </a>
-            <ul class="main-menu__links">
-                <li class="link__item">
-                    <a id="home" href="#" class="menu__link">Inicio</a>
-                </li>
-                <li class="link__item">
-                    <a id="materias" href="/index.html#materias" class="menu__link">Materias <img src="/assets/Icon/arrow_right.png" class="menu__arrow"></a>
-                    <ul class="link__sub">
-                        <li class="link__inside">
-                            <a href="/index.html#matematicas" class="menu__link menu__link--inside">Matemáticas</a>
-                        </li>
-                        <li class="link__inside">
-                            <a href="/index.html#fisica" class="menu__link menu__link--inside">Física</a>
-                        </li>
-                        <li class="link__inside">
-                            <a href="/index.html#informatica" class="menu__link menu__link--inside">Informática</a>
-                        </li>
-                        <li class="link__inside">
-                            <a href="/index.html#programacion" class="menu__link menu__link--inside">Programación</a>
-                        </li>
-                        <li class="link__inside">
-                            <a href="/index.html#desweb" class="menu__link menu__link--inside">Desarrollo Web</a>
-                        </li>
+            <ul class="main-menu__items">
+                <li class="menu-item">
+                    <a href="#" class="item_link">
+                        <span class="material-symbols-outlined">home</span> Inicio
+                    </a>
+                    <ul>
+
                     </ul>
                 </li>
-                <li class="link__item">
-                    <a id="practicas" href="#" class="menu__link">Práticas</a>
+                <li class="menu-item">
+                    <a class="item_link menu-item_submenu">
+                        <span class="material-symbols-outlined">more_vert</span> Materias <span class="material-symbols-outlined arrow">chevron_right</span>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="../../index.html#matematicas" class="item_link">Matemática</a></li>
+                        <li class="submenu-item"><a href="../../index.html#fisica" class="item_link">Física</a></li>
+                        <li class="submenu-item"><a href="../../index.html#informatica" class="item_link">Informática</a></li>
+                        <li class="submenu-item"><a href="../../index.html#programacion" class="item_link">Programación</a></li>
+                        <li class="submenu-item"><a href="../../index.html#desweb" class="item_link">Desarrollo Web</a></li>
+                    </ul>
                 </li>
-                <li class="link__item">
-                    <a id="biblio" href="#" class="menu__link">Bibliografia</a>
+                <li class="menu-item">
+                    <a href="#" class="item_link">
+                        <span class="material-symbols-outlined">grade</span> Prácticas
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="item_link">
+                        <span class="material-symbols-outlined">collections_bookmark</span> Bibliografía
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <nav id="materia-menu" class="materia-menu">
-        <button class="--btn">Conteo (Recuento y enumeración)</button>
-        <button class="--btn">Teoria de grafos y algoritmos de grafos</button>
-    </nav>
-    <section class="caja">
-        <nav class="theme-menu">
-            <div class="theme-menu__active">
-                <span class="theme-menu__actite-bar"></span>
-                <span class="theme-menu__actite-bar"></span>
-                <span class="theme-menu__actite-bar"></span>
-            </div>
-            <div class="theme__option">
-                <span class="theme-bar"></span>
-                <a href="#con_1" class="theme__button">
-                    <div class="theme_index"></div>
-                    <p class="theme__button_p">Definición de Conteo</p>
+    <div class="main-menu__block"></div>
+    <div class="theme-menu">
+        <div class="theme__options back-purplelight-p1">
+            <button class="theme__option-opt">Recuento y enumaración</button>
+            <button class="theme__option-opt">Teorema de grafos y algoritmos de grafos</button>
+        </div>
+        <button class="theme-menu__button"><span class="material-symbols-outlined theme-menu__button-icon">arrow_drop_down</span></button>
+    </div>
+    <section class="theme-container back-red">
+        <nav class="subtheme-menu back-greenlight-p5">
+            <button class="subtheme-menu__button">
+                <span class="material-symbols-outlined">menu_open</span>
+            </button>
+            <div class="subtheme-menu__container">
+                <div id="subtheme_indicator" class="subtheme_indicator"></div>
+                <a href="#con_1">
+                    <div class="subtheme_index"></div>
+                    <p>Presentación</p>
                 </a>
-                <a href="#con_2" class="theme__button">
-                    <div class="theme_index"></div>
-                    <p class="theme__button_p">Regla de la Suma y el producto</p>
+                <a href="#con_2">
+                    <div class="subtheme_index"></div>
+                    <p>Regla de la Suma</p>
                 </a>
-                <a href="#con_3" class="theme__button">
-                    <div class="theme_index"></div>
-                    <p class="theme__button_p">Permutación y variaciones</p>
+                <a href="#con_3">
+                    <div class="subtheme_index"></div>
+                    <p>Regla del producto</p>
                 </a>
-
+                <a href="#con_4">
+                    <div class="subtheme_index"></div>
+                    <p>Permutacion y variacion</p>
+                </a>
+                <a href="#con_5">
+                    <div class="subtheme_index"></div>
+                    <p>Aceleración</p>
+                </a>
+                <a href="#con_5">
+                    <div class="subtheme_index"></div>
+                    <p>Caida</p>
+                </a>
             </div>
         </nav>
-        <div id="con_1" class="ref_mat"></div>
-        <div class="theme-container back-white img_text">
-            
+        <div class="subtheme-menu__aux"></div>
+        <div class="subtheme__idea-button subtheme__idea__button--active">
+            <img src="/assets/Icon/idea.png" alt="idea_icon">
         </div>
-        <div id="con_2" class="ref_mat"></div>
-        <div class="theme-container">
-
+        <div class="subtheme__idea">
+            <h2 class="back-brownlight-p1">Notas 📦 ayudas</h2>
+            <button class="subtheme__idea-close subtheme__idea__button--active">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="subtheme__idea__container">
+                <div class="button_left">
+                    <button onclick="scrollL()">
+                        <span class="material-symbols-outlined">arrow_left</span>
+                    </button>
+                </div>
+                <div class="cover">
+                    <div class="element-scroll">
+                        <div class="idea_note back-black"></div>
+                        <div class="idea_note back-blue"></div>
+                        <div class="idea_note back-red"></div>
+                        <div class="idea_note back-yellow"></div>
+                        <div class="idea_note prueba2"></div>
+                        <div class="idea_note prueba2"></div>
+                        <div class="idea_note prueba2"></div>
+                        <div class="idea_note prueba2"></div>
+                        <div class="idea_note prueba2"></div>
+                    </div>
+                </div>
+                <div class="button_right">
+                    <button onclick="scrollR()">
+                        <span class="material-symbols-outlined">arrow_right</span>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div id="con_3" class="ref_mat"></div>
-        <div class="theme-container">
-
+        <div>
+            <div class="ref" id="con_1"></div>
+            <h1 class="separador back-bluelight-p1">Presentación</h1>
+            <div class="subtheme-container back-bluelight-p2">
+                <div class="present back-white text-black">
+                    <h1>¿Qué es el Conteo?</h1>
+                    <div class="present__coment">
+                        <div class="present__img">
+                            <img src="../../assets/img/mat_dis1-present.jpg" alt="">
+                        </div>
+                        <p>
+                            El conteo o también como lo veremos "Recuento y enumeración", es el recuento de
+                            objetos, elementos o eventos. Aplicaremos técnicas y metodos discretos orientada
+                            a la resolución computacional de problemas, esto llegara a ser util para mejorar
+                            la lógica de la programación. <br>
+                            <b>Recuento</b>: Implica determinar cuánto elementos hay en un conjunto que cumple
+                            cierta propiedad. <br>
+                            <b>Enumeración</b>: Implica realizar un listado de elementos que cumplen una propiedad
+                            o mejor dicho, enlistar los elementos del recuento. <br>
+                            <b>Clasificación</b>: Implica en dividir el conjunto en "clases, tipos y otros", osea
+                            que de la enumeración separamos por una propuedad. <br>
+                            <b>Optimización</b>: Implica en maximizar o minimizar situaciones
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ref" id="con_2"></div>
+            <h1 class="separador back-red-dark-p1">Regla de la suma</h1>
+            <div class="subtheme-container back-white">
+                <p class="parrafo">
+                    También conocido como <strong>"Primer principio fundamental del conteo"</strong>. La regla de la suma
+                    puede llegarse a definir como: <br>
+                    Si un primer evento puede realizarse de \(n_{1}\) maneras y si un segundo evento puede realizarse de
+                    \(n_{2}\) maneras, y ambos eventos no pueden realizarse sumultaneamente, entonces existen \(n_{1} + n_{2}\)
+                    maneras en que uno de los eventos pueda ocurrir. <br>
+                    <div class="formula parrafo">
+                        <p>
+                            <b class="text-red">Ej.</b> En la biblioteca hay <b>10</b> libros de Java y
+                            <b>5</b> libros de Python, ¿cuántas opciones de elegir un libro de Java o Python
+                            existen?
+                        </p> <br>
+                        \(10 + 5 = 15 \) opciones
+                        <i>#Por la regla de la suma</i>
+                        <br> <br> <br>
+                        <p>
+                            <b class="text-red">Ej.</b> Una persona pretende emprender un viaje y tiene
+                            la opción de viajar en flota o en avión.
+                            <ul class="parrafo">
+                                <li>Por flota existen <b>8</b> empresas a elegir</li>
+                                <li>Por avión existen <b>3</b> empresas a elegir</li>
+                            </ul>
+                            ¿Cuántas opciones de elegir una empresa de transporte tiene la persona?
+                        </p> <br>
+                        \( 8 + 3 = 11 \) empresas para viajar
+                        <i>#Por la regla de la suma</i>
+                    </div>
+                </p>
+                <p class="parrafo">
+                    Puede generalizarse para <b>t</b> eventos, donde solo se puede elegir o sacar una opción,
+                    osea uno o el otro pero no ambos.
+                </p>
+            </div>
+            <div class="ref" id="con_3"></div>
+            <h1 class="separador back-greenlight-p1">Regla del producto</h1>
+            <div class="subtheme-container back-white-1">
+                <p class="parrafo">
+                    También conocido como <strong>"Segundo principio fundamental del conteo"</strong>. La regla del
+                    producto puede llegar a definirse como: <br>
+                    Si un evento piede realizarse en <b>r pasos</b> sucesivos hasta r y <br>
+                    el paso 1 pude efectuarse de \(n_{1}\) formas. <br>
+                    el paso 2 puede efectuarse de \(n_{2}\) formas. <br>
+                    <i class="coment">\(\dotsb\dotsb\dotsb\dotsb\dotsb\dotsb\)#Y asi sucesivamente</i>
+                    el paso <b>r</b> puede efectuarse de \(n_{r}\) formas. <br>
+                    Entonces existen \( n_{1} \cdot n_{2} \cdot n_{3} \cdot ... \cdot n_{r} \) formas de que
+                    el evento puede ocurrir.
+                </p>
+                <div class="formula parrafo">
+                    <p>
+                        <b class="text-red">Ej.</b> Una persona desea combinar su vestuario, consistente en combinar
+                        un traje y un calzado. <br>
+                        Existen trajes de color: negro, azul y plomo, calzados de color:
+                        negro y café. <br>
+                        ¿Cuántas opciones de combinar su vestuario tiene la persona? <br>
+                        Paso 1 = elegir el traje (3 opciones) <br>
+                        Paso 2 = elegir el calzado (2 opciones) <br>
+                    </p> <br>
+                    \(3 \cdot 2 = 6\) opciones de combinar
+                    <i class="coment">#Por la regla del producto</i>
+                    <br> <br>
+                    <p>
+                        Ahora si se quiere incorporar una camiza, donde existen de dos colores: blanco y rosado. <br>
+                        Paso 1 = elegir el traje (3 opciones) <br>
+                        Paso 2 = elegir el calzado (2 opciones) <br>
+                        Paso 3 = elegir la camiza (2 opciones)
+                    </p> <br>
+                    \(3 \cdot 2 \cdot 2 = 12\) opciones de vestuario
+                    <i class="coment">#Por la regla del producto</i>
+                </div>
+            </div>
+            <div class="ref" id="con_4"></div>
+            <h2 class="separador back-orangeyellow-p1">Permutaciones y variaciones</h2>
+            <div class="prueba subtheme-container">
+                <h1>HOLa4</h1>
+            </div>
+            <div class="prueba subtheme-container">
+                <h1>HOLa5</h1>
+            </div>
+            <div class="prueba subtheme-container">
+                <h1>HOLa6</h1>
+            </div>
         </div>
     </section>
-    <section id="funcion" class="caja">
-
-    </section>
-    <script src="/js/mat-menu.js"></script>
+    <section class="theme-container prueba back-blue"></section>
+    <script src="../../js/main_menu.js"></script>
+    <script src="../../js/sec_menu.js"></script>
 </body>
 </html>

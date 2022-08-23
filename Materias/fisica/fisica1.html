@@ -93,11 +93,11 @@
                 </a>
                 <a href="#cin_5">
                     <div class="subtheme_index"></div>
-                    <p>Aceleración</p>
+                    <p>Demostraciones</p>
                 </a>
                 <a href="#cin_6">
                     <div class="subtheme_index"></div>
-                    <p>Caida</p>
+                    <p>Ejercicios MRU - MRUV</p>
                 </a>
             </div>
         </nav>
@@ -549,9 +549,67 @@
                     </div>
                 </div>
             </div>
-            <div class="prueba subtheme-container">
-                <h1>HOLa5</h1>
+            <div id="cin_5" class="ref"></div>
+            <h1 class="separador back-purplelight-p1">Demostracines</h1>
+            <div class="subtheme-container back-white-1">
+                <p class="parrafo">
+                    Ya sabiendo los conceptos de posición, velocidad y aceleración; Podemos comenzar a demostrar
+                    las formulas que vamos a usar para en todos los ejemplos y ejercicios que haremos. Por otro
+                    lado demos tener en cuenta siempre los conceptos de desplazamiento y distancia, ya que nos
+                    servira para simplificar estas formulas.
+                    <div class="text-center text-size-20">
+                        \(a) v_{f} = v_{i} + a \cdot t\) <br>
+                        \(b) v_{f}^2 = v_{i}^2 + 2 \cdot a \cdot x\) <br>
+                        \(c) x = v_{i} \cdot t + \tfrac{1}{2} \cdot a \cdot t^2\)
+                    </div>
+                </p>
+                <p class="parrafo">
+                    <h2>Demostración de la formula 1</h2>
+                    <div class="formula">
+                        \( \vec{a}_{med} = \tfrac{\triangle \vec{v}}{\triangle t} = \tfrac{\vec{v}_{f} - \vec{v}_{i}}{t_{f} - t{i}} \)
+                        <i>#Partimos de la definción de aceleración media.</i><br>
+                        \( \vec{a}_{med} \cdot (t_{f} - t_{i}) = \vec{v}_{f} - \vec{v}_{i} \)
+                        <i>#Pasamos la diferencia de tiempos a multiplicar.</i><br>
+                        \( \vec{a}_{med} \cdot (t_{f} - 0) = \vec{v}_{f} - \vec{v}_{i} \)
+                        <i>#\(t_{i} = 0\) ya que desde 0s se mueve.</i><br>
+                        \( \vec{v}_{f} = \vec{v}_{i} \pm \vec{a} \cdot t \)
+                        <i>#Restamos \(\vec{v}_{i}\) y tenemos nuestra ecuación.</i><br>
+                    </div>
+                    <h2>Demostración de la formula 2</h2>
+                    <div class="formula">
+                        \(\vec{v}_{med} = \tfrac{\triangle \vec{v}}{\triangle t} = \tfrac{\vec{v}_{f} + \vec{v}_{i}}{2}\)
+                        <i>#La aceleracion es la media de las velocidades</i><br>
+                        \( \vec{v} = \tfrac{\vec{x}_{f} - \vec{x}_{i}}{t} \rightarrow \vec{x}_{f} - \vec{x}_{i} = \vec{v} \cdot t\)
+                        <i>#Definición de velocidad media</i><br>
+                        \(\vec{x}_{f} - \vec{x}_{i} = (\tfrac{\vec{v}_{f} + \vec{v}_{i}}{2}) \cdot t\)
+                        <i>#Remplazamos, donde \(\vec{v} = \tfrac{\vec{v}_{f} + \vec{v}_{i}}{2}\)</i><br>
+                        \(\vec{x}_{f} - \vec{x}_{i} = (\tfrac{\vec{v}_{f} + \vec{v}_{i}}{2}) \cdot (\tfrac{\vec{v}_{f} - \vec{v}_{i}}{\vec{a}})\)
+                        <i>#De la definición de aceleración \( t =  \tfrac{\vec{v}_{f} - \vec{v}_{i}}{\vec{a}}\)</i><br>
+                        \( \vec{x}_{f} - \vec{x}_{i} = \tfrac{\vec{v}_{f}^2 - \vec{v}_{i}^2}{2 \cdot \vec{a}} \)
+                        <i>#Multiplicamos las fracciones, diferencia de cuadrados</i><br>
+                        \( \vec{v}_{f}^2 = \vec{v}_{i}^2 \pm 2 \cdot \vec{a} \cdot (\vec{x}_{f} - \vec{x}_{i}) \)
+                        <i>#Despejamos la velocidad final y tenemos la segunda ecuación</i>
+                    </div>
+                    <h2>Demostración de la formula 3</h2>
+                    <div class="formula">
+                        \( \vec{v}_{med} = \tfrac{\vec{v}_{f} + \vec{v}_{i}}{2} \)
+                        <i>#Definición de velocidad media</i><br>
+                        \( \vec{v}_{med} = \tfrac{\vec{x}_{f} - \vec{x}_{i}}{t} \)
+                        <i>#Definición de velocidad media</i><br>
+                        \( \tfrac{\vec{x}_{f} - \vec{x}_{i}}{t} = \tfrac{\vec{v}_{f} + \vec{v}_{i}}{2} \)
+                        <i>#Igualamos ya que son mismas definiciones</i><br>
+                        \( \tfrac{\vec{x}_{f} - \vec{x}_{i}}{t} = \tfrac{\vec{v}_{i} \pm \vec{a} \cdot t + \vec{v}_{i}}{2} \)
+                        <i>#De la primera ecuación \( \vec{v}_{f} = \vec{v}_{i} \pm \vec{a} \cdot t \)</i><br>
+                        \( \tfrac{\vec{x}_{f} - \vec{x}_{i}}{t} = \tfrac{2 \cdot \vec{v}_{i}}{2} \pm \tfrac{a \cdot t}{2} \)
+                        <i>#Repartimos la fracción</i><br>
+                        \( \vec{x}_{f} - \vec{x}_{i} = t \cdot \vec{v}_{i} \pm \tfrac{\vec{a} \cdot t^2}{2} \)
+                        <i>#Repartimos el tiempo y simplificamos la fracción</i><br>
+                        \( \vec{x}_{f} = \vec{x}_{i} + \vec{v}_{i} \cdot t \pm \tfrac{1}{2} \cdot \vec{a} \cdot t \)
+                        <i>#Despejamos \(\vec{x}_{f}\) y simplificamos</i>
+                    </div>
+                </p>
             </div>
+            <div id="cin_6" class="ref"></div>
             <div class="prueba subtheme-container">
                 <h1>HOLa6</h1>
             </div>

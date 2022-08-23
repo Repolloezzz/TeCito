@@ -81,8 +81,8 @@ const observer = new IntersectionObserver((entradas, observer) => {
         }
     });
 }, {
-    rootMargin: '80px 0px 0px 0px',
-    threshold: 0.2
+    rootMargin: '200px 0px 0px 0px',
+    threshold: 0.3
 })
 
 subthemes.forEach(subtheme => observer.observe(subtheme))
