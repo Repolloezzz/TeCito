@@ -60,10 +60,17 @@ body{
   background-color: var(--color-5);
   color: var(--wgb-1-1);
 }
+.back-yellow-alpha{
+  background: #ffcc0088;
+}
 .back-orange {
   background-color: var(--color-6);
   color: var(--wgb-1-1);
 }
+.back-orange-alpha{
+  background: #ffaa0088 !important;
+}
+
 
 .back-orangeyellow-p1 {
   background-color: #ffcc00;

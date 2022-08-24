@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .w-ocultar{
@@ -51,7 +52,6 @@
 .vh-100{
     height: 100%;
 }
-
 .text-center{
   text-align: center;
 }
@@ -61,6 +61,9 @@
 @media only screen and (min-width: 800px){
   .text-size-20{
     font-size: 2vw;
+  }
+  .vw-80{
+    width: 70%;
   }
 }
 /*-------------------------------------Columnas------------------------------------------*/
@@ -115,6 +118,10 @@
   display: block;
   color: var(--wgb-1-2);
 }
+.ajustar{
+  font-size: 2vw;
+  text-align: center;
+}
 .coment{
   display: block;
   color: var(--wgb-1-2);
@@ -152,6 +159,9 @@
     border: 3px solid var(--wgb-1-2);
     margin: 10px 0px;
   }
+  .ajustar{
+    font-size: 1vw;
+  }
 }
 
 /*-----------------------------IMAGENES-----------------------------------*/
@@ -162,6 +172,12 @@
 }
 .img-ejem_large{
   display: none;
+}
+.img-ejem-2{
+  width: 80vw;
+  margin: 5px;
+  border: 2px solid #3f3f3f;
+  display: block;
 }
 @media only screen and (min-width: 800px){
   .img-ejem{
@@ -176,7 +192,12 @@
   .example-with-img{
     display: flex;
   }
+  .img-ejem-2{
+    width: 50vw;
+    margin: 5px;
+  }
 }
+
 /*--------------------------------REFERANCIAS A UNA SECCION------------------------------*/
 .ref {
   background-color: #007fb5;
@@ -283,6 +304,7 @@
   padding: 10px;
   font-size: 8vw;
   margin: 0;
+  color:  white;
 }
 .subtheme-container{
   padding: 5px;
@@ -294,7 +316,7 @@
     font-size: 4vw;
   }
   .subtheme-container{
-    padding: 10px;
+    padding: 40px;
   }
 }
 
@@ -340,7 +362,7 @@
 @media only screen and (min-width: 800px){
   .present{
     padding: 15px;
-    margin: 50px 0px;
+    margin: 10px 0px;
   }
   .present__coment{
     display: grid;
@@ -352,6 +374,6 @@
   }
   .parrafo{
     font-size: 1.4vw;
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
   }
 }
