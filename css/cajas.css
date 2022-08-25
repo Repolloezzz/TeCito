@@ -109,7 +109,7 @@
 }
 
 .formula{
-  padding: 10px;
+  padding: 20px;
   border-left: 5px solid var(--main-color-2);
   background: rgba(255, 255, 255, .4);
   font-size: 3vw;
@@ -117,6 +117,7 @@
 .formula i{
   display: block;
   color: var(--wgb-1-2);
+  font-size: 2vw;
 }
 .ajustar{
   font-size: 2vw;
@@ -125,6 +126,7 @@
 .coment{
   display: block;
   color: var(--wgb-1-2);
+  font-size: 2.5vw;
 }
 @media only screen and (min-width: 800px){
   .column{
@@ -148,10 +150,11 @@
     font-size: 1.4vw;
   }
   .formula i{
-    display: inline-block;
+    font-size: 1.2vw;
   }
   .coment{
-    display: inline-block;
+    display: block;
+    font-size: 1.2vw;
   }
   .column-element .gif{
     gap: 10px;
@@ -202,9 +205,13 @@
 .ref {
   background-color: #007fb5;
   position: absolute;
-  transform: translateY(-100px);
+  transform: translateY(-80px);
 }
-
+@media only screen and (min-width: 800px){
+  .ref{
+    transform: translateY(-100px);
+  }
+}
 
 /*---------------------------CAJAS INDEX TEMAS PRESENTACIÓN--------------------------------*/
 .theme-present__menu {
@@ -302,7 +309,7 @@
   display: block;
   text-align: center;
   padding: 10px;
-  font-size: 8vw;
+  font-size: 6vw;
   margin: 0;
   color:  white;
 }
@@ -313,7 +320,7 @@
 
 @media only screen and (min-width: 800px){
   .separador{
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .subtheme-container{
     padding: 40px;
@@ -352,12 +359,14 @@
   border-left: 5px solid var(--color-2);
   font-size: 4vw;
   height: min-content;
+  text-align: justify;
 }
 
 .parrafo{
   text-align: justify;
-  font-size: 4vw;
+  font-size: 3vw;
   padding: 10px;
+  text-align: justify;
 }
 @media only screen and (min-width: 800px){
   .present{
