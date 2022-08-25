@@ -427,7 +427,97 @@
                 </p>
                 <p class="parrafo">
                     Como pudimos observar de los anteriores ejemplo tenemos siempre en todos los casos un primer elementos que
-                    no cambia, ya que no existe un "primer elementos" ya que varia de la forma en la que lo veamos;
+                    no cambia, ya que no existe un "primer elementos" ya que varia de la forma en la que lo veamos.
+                </p>
+                <p class="parrafo">
+                    <b>PERMUTACIONES EN LA QUE ALGUNOS DEL CONJUNTO BASE SE REPITEN.</b> <br>
+                    Es cuando tenemos que en las permutaciones hay algunos elementos repetidos del anterior.
+                    <div class="formula vw-80">
+                        <p>
+                            Tomemos como ejemplo los elementos \(\{C, A, S, A\}\) por lo que vemos tenemos un elementos repetido
+                            pero los tomamos como diferentes. Por otro lado si queremos hacer las permutaciones llegara un
+                            momento en el cual existan repetidos.
+                        </p> <br>
+                        {C, <b class="text-red">A</b>, S, <b class="text-green">A</b>}
+                        <i class="coment ">#Efectuamos las permutaciones y llegamos a esto</i>
+                        (S, <b class="text-red">A</b>, C, <b class="text-green">A</b>) = (S, <b class="text-green">A</b>, C, <b class="text-red">A</b>) <br>
+                        (C, <b class="text-red">A</b>, S, <b class="text-green">A</b>) = (C, <b class="text-green">A</b>, S, <b class="text-red">A</b>) <br>
+                        (C, <b class="text-red">A</b>, <b class="text-green">A</b>, S) = (C, <b class="text-green">A</b>, <b class="text-red">A</b>, S)
+                        <p>
+                            Como vemos aunque consideremos a <b class="text-red">A</b> y <b class="text-green">A</b> como diferentes en las permutaciones
+                            esto no va, ya que su permutación es igual por lo que tendriamos que descartar a uno de los repetidos
+                            a eleccion propia por lo que es indiferente si eleminiamos (C, <b class="text-red">A</b>, <b class="text-green">A</b>, S)
+                            y nos quedamos con (C, <b class="text-green">A</b>, <b class="text-red">A</b>, S) o viceversa.
+                        </p>
+                    </div>
+                </p>
+                <p class="parrafo">
+                    El número de permutaciones de \(n\) objetos entre los cuales existen \(n_{1}\) iguales ó \(n_{2}\) iguales
+                    ó \(n_{3}\) iguales ó \(n_{k}\) iguales está dada por la siguiente relación.
+                    <div class="center">
+                        <div class="center parrafo back-orange-alpha vw-80 text-center">
+                            \(N = \tfrac{n!}{n_{1}! \cdot n_{2}! \cdot n_{3}! \cdot ... n_{k}!}\)
+                            \(N = n_{1}! + n_{2}! + n_{3}! + ... + n_{k}!\)
+                            <i class="coment">#Ambas expresiones son equivalentes entre si</i>
+                            <p>
+                                Donde \(n_{k}\) son los elementos que se repiten
+                            </p>
+                        </div>
+                    </div>
+                </p>
+                <p class="parrafo">
+                    Tomemos en cuenta que esta expresión nos da el "recuento" de las permutaciones existentes
+                    con elementos repetidos pero sin contar a la otra repetición como lo vimos en el ejemplo
+                    anterior (C, <b class="text-red">A</b>, S, <b class="text-green">A</b>) = (C, <b class="text-green">A</b>, S, <b class="text-red">A</b>)
+                    como vemos ambas permutaciones son iguales y debemos excluir a las permutaciones repetidas.
+                    <div class="formula vw-80">
+                        <p>
+                            <b class="text-red">Ej.</b>¿Cuántas y cuáles son las palabras que pueden formarse con la palabra
+                            C<b class="text-red">A</b>S<b class="text-green">A</b>? <br>
+                            Tenemos 4 elementos \(\rightarrow n = 4\) <br>
+                            Hay dos letras A \(\rightarrow n_{1} = 2\) <br>
+                            Hay una letra C \(\rightarrow n_{2} = 1\) <br>
+                            Hay una letra S \(\rightarrow n_{3} = 1\) <br>
+                            Con esto dicho tener el "recuento" de las permutaciones con elemento que se repiten
+                        </p> <br>
+                        \(N = \tfrac{4!}{2! \cdot 1! \cdot 1!} = \tfrac{24}{2} = 12\)
+
+                        <p>
+                            Ahora veamos la "enumeración" de las permutaciones, deberian de ser 12 <br>
+                            (C, <b class="text-red">A</b>, S, <b class="text-green">A</b>) (C, S, <b class="text-red">A</b>, <b class="text-green">A</b>) (C, <b class="text-red">A</b>, <b class="text-green">A</b>, S) (<b class="text-red">A</b>, <b class="text-green">A</b>, C, S) <br>
+                            (<b class="text-red">A</b>, <b class="text-green">A</b>, S, C) (<b class="text-red">A</b>, S, C, <b class="text-green">A</b>) (<b class="text-red">A</b>, C, S, <b class="text-green">A</b>) (S, C, <b class="text-red">A</b>, <b class="text-green">A</b>) <br>
+                            (S, <b class="text-red">A</b>, <b class="text-green">A</b>, C) (<b class="text-red">A</b>, S, <b class="text-green">A</b>, C) (S, <b class="text-red">A</b>, C, <b class="text-green">A</b>) (<b class="text-red">A</b>, C, <b class="text-green">A</b>, S) <br> <br>
+                            Por que no tomamos a (S, <b class="text-green">A</b>, <b class="text-red">A</b>, C)? <br>
+                            Es muy claro ya que dijimos que debemos excluir a los repetidos por que tenemos que: <br>
+                            (S, <b class="text-red">A</b>, <b class="text-green">A</b>, C) = (S, <b class="text-green">A</b>, <b class="text-red">A</b>, C) <br>
+                            ya que son iguales solo tomamos a uno en la permutación
+                        </p> <br> <br>
+                        <p>
+                            <b class="text-red">Ej.</b>¿Cuántas palabras pueden formarse con la palabra
+                            T<b class="text-orange">R</b><b class="text-blue">A</b>B<b class="text-blue">A</b>J<b class="text-blue">A</b><b class="text-orange">R</b>? <br>
+                            Tenemos 8 elementos \(\rightarrow n = 8\) <br>
+                            Hay tres letras A \(\rightarrow n_{1} = 3\) <br>
+                            Hay dos letras R \(\rightarrow n_{2} = 2\) <br>
+                            Hay una letra T \(\rightarrow n_{3} = 1\) <br>
+                            Hay una letra B \(\rightarrow n_{4} = 1\) <br>
+                            Hay una letra J \(\rightarrow n_{5} = 1\) <br>
+                            Ya sabiendo esto podemos hallar el número de permutaciones
+                        </p> <br>
+                        \(N = \tfrac{8!}{3! \cdot 2! \cdot 1! \cdot 1! \cdot 1!} = \tfrac{8!}{12} = 3360\)
+                        <i class="coment">#Podemos formar 3360 palabras con las letras de TRABAJAR</i> <br> <br>
+                        <p>
+                            <b class="text-red">Ej.</b> ¿Cúantos bytes contienen exactamente 5 unos? <br>
+                            Donde 1byte = 8bits \(\rightarrow n = 8\) <br>
+                            <i class="coment">#1 byte puede ser 10001101 ó 10000000 un binario de 8 dígitos</i>
+                            En binario solo tenemos dos lementos 0's y 1's <br>
+                            Hay cinco 1's \(\rightarrow n_{1} = 5\) <br>
+                            Hay tres 0's \(\rightarrow n_{2} = 3\) <br>
+                            <i class="coment">#De 8 elementos 5 son 1's los restantes 3 tienen que ser 0's</i>
+                            Sabiendo esto podemos hallar el número de bytes que tienen 5 unos.
+                        </p> <br>
+                        \(N = \tfrac{8!}{5! \cdot 3!} = \tfrac{8 \cdot 7 \cdot 6 \cdot 5!}{5! \cdot 6} = 8*7 = 56\)
+                        <i class="coment">Existen 56 bytes que contienen cinco unos</i>
+                    </div>
                 </p>
             </div>
             <div class="prueba subtheme-container">
