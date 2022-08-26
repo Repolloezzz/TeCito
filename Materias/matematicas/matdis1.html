@@ -674,6 +674,90 @@
                     </div>
                 </p>
                 <p class="parrafo">
+                    <b>Permutaciones ordenadas</b> <br>
+                    Supongamos un conjunto \(X\) y también sus subconjuntos que son particiones de \(X\)
+                    tal como \(X_{1}, X_{2} ... X_{k}\) donde cada uno de ellos tienen una cardinalidad
+                    \(n_{1}, n_{2} .. n_{k}\) respectivamente, la union de estas particiones forman al
+                    conjunto \(X\) al igual que la suma de sus cardinales es el cardinal de \(X\).
+                    <div class="center">
+                        <div class=" back-orange-alpha vw-80 center parrafo">
+                            \(n_{1} + n_{2} + n_{3} +...+n_{k} = n\)
+                            <i class="coment">#Donde n es el cardinal de \(X\)</i> <br>
+                            \(N = \tfrac{n!}{n_{1}! \cdot n_{2}! \cdot n_{3}! \cdot ... \cdot n_{k}!}\) <br>
+                            <p>
+                                Donde \(n_{k}\) son los cardinales de las particiones de un conjunto \(X\)
+                            </p>
+                        </div>
+                    </div>
+                </p>
+                <p class="parrafo">
+                    Hacer notar que la formula anteriormente vista se puede resumir en las combinaciones de cada una
+                    de las cardinalidades \(n_{k}\) como veremos en los siguientes ejemplos.
+                    <div class="formula vw-80">
+                        <p>
+                            <b class="text-red">Ej.</b>
+                            En las elecciones a decano de la facultad existen tres mesas de votación:
+                            una en la C. de Informática, otra en la C. de Estadística y otra en la
+                            C. de Matemática; Para estas mesas de votación la cantidad de delegados
+                            que se requieren son: dos, uno y uno, respectivamente. Si se tienen 4 personas
+                            de cuántas maneras se pueden distribuir estas en las 3 mesas de votación? <br>
+                            Notemos que tenemos al conjunto \(X = \{I, E, M\}\)
+                            <i class="coment">I = informática, E = estadísitca, M = matemática</i>
+                            Donde el cardinal de X es \(|X| = 4\) <br>
+                            Donde el cardinal de I es \(|I| = 2\) <br>
+                            Donde el cardinal de E es \(|E| = 1\) <br>
+                            Donde el cardinal de M es \(|M| = 1\) <br>
+                            Hacer notar que I, E y M son particiones de X, por lo tanto podemos aplicar la formula
+                            que nos devuelve las permutaciones ordenadas. <br>
+                            Tenemos 4 elementos \(\rightarrow n = 4\) <br>
+                            Tenemos 2 elementos \(\rightarrow n_{1} = 2\) <br>
+                            Tenemos 1 elementos \(\rightarrow n_{2} = 1\) <br>
+                            Tenemos 1 elementos \(\rightarrow n_{3} = 1\) <br>
+                        </p> <br>
+                        \(N = \tfrac{n!}{n_{1}! \cdot n_{2}! \cdot ... \cdot n_{k}!} = \tfrac{4!}{2! \cdot 1! \cdot 1!} = 12\)
+                        <p>
+                            También podemos tomar la alternativa usando combinaciones y la regla del producto <br>
+                            Tenemos 3 pasos consecutivos <br>
+                            <ul class="parrafo">
+                                <li>Paso 1 - Elegir 2 delegados para Informática</li>
+                                <li>Paso 2 - Elegir 1 delegados para Estadísica</li>
+                                <li>Paso 3 - Elegir 1 delegados para Matemática</li>
+                            </ul>
+                            Tenemos 4 delegados \(\rightarrow n = 4\) <br>
+                            Tenemos 3 eventos por los que usamos la regla del producto.
+                        </p>
+                        \(C(4, 2) \cdot C(2, 1) \cdot C(1, 1)\) <br>
+                        \(6 \cdot 2 \cdot 1 = 12\)
+                        <i class="coment">#Como vemos sale lo mismo</i> <br> <br>
+                        <p>
+                            <b class="text-red">Ej.</b>
+                            En el curso existen 12 estudiantes y se requiere formar tres equipos de wally,
+                            cada equipo tiene 4 jugadores. ¿Cuántas distrubuciones existen entre los 12 estudiantes? <br>
+                            Consideremos lo siguiente:
+                            <ul class="parrafo">
+                                <li>El conjunto X de estudiantes tiene un cardinal de \(|X| = 12\)</li>
+                                <li>Las particiones de X son 3 cada uno con un cardinal de \(|X_{k}| = 4\)</li>
+                            </ul>
+                        </p>
+                        \(N = \tfrac{n!}{n_{1}! \cdot n_{2}! \cdot ... \cdot n_{k}!} = \tfrac{12!}{4! \cdot 4! \cdot 4!} = 34650\)
+                        <i class="coment">#Tenemos 34650 permutaciones</i>
+                        <p>
+                            Ahora veamos como podemos hacerlo con combinaciones y por la regla de producto
+                            <ul class="parrafo">
+                                <li>Paso 1 - Elegir de 12 un equipo de 4</li>
+                                <li>Paso 2 - Elegir de 8 un equipo de 4</li>
+                                <li>Paso 3 - Elegir de 4 un equipo de 4</li>
+                            </ul>
+                            Sabiendo esto consideremos lo siguiente:
+                            Tenemos 12 estudiantes \(\rightarrow n = 12\) <br>
+                            Tenemos 3 eventos por lo que usamos la regla del producto.
+                        </p>
+                        \(C(12, 4) \cdot C(8, 4) \cdot C(4, 4)\) <br>
+                        \(495 \cdot 70 \cdot 1 = 34650\)
+                        <i class="coment">#Igual sale, entonces ambas formas son validas</i>
+                    </div>
+                </p>
+                <p class="parrafo">
                     <b class="parrafo_title">COMBINACIONES CON REPETICIÓN</b> <br>
                     Pueden o no repetirse, haciendolo 2, 3 o más veces; el parámetro de repetición
                     no se considera en la expreción. El número de combinaciones con repetición de \(n\)
