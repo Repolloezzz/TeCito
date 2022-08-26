@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="ref" id="con_2"></div>
-            <h1 class="separador back-red-dark-p1">Regla de la suma</h1>
+            <h1 class="separador back-red">Regla de la suma</h1>
             <div class="subtheme-container back-white">
                 <p class="parrafo">
                     También conocido como <strong>"Primer principio fundamental del conteo"</strong>. La regla de la suma
@@ -199,7 +199,7 @@
                 </p>
             </div>
             <div class="ref" id="con_3"></div>
-            <h1 class="separador back-greenlight-p1">Regla del producto</h1>
+            <h1 class="separador back-green">Regla del producto</h1>
             <div class="subtheme-container back-white-1">
                 <p class="parrafo">
                     También conocido como <strong>"Segundo principio fundamental del conteo"</strong>. La regla del
@@ -244,7 +244,7 @@
                 </p>
             </div>
             <div class="ref" id="con_4"></div>
-            <h2 class="separador back-orangeyellow-p1">Permutaciones</h2>
+            <h2 class="separador back-orange">Permutaciones y variaciones</h2>
             <div class="subtheme-container back-white-1">
                 <p class="parrafo">
                     Permutación es una disposición ordenada de objetos o de ternas ordenadas (pares si quieres)
@@ -289,7 +289,7 @@
                     </div>
                 </p>
                 <p class="parrafo">
-                    <b>PERMUTACIONES CON REPETICIÓN.</b> <br>
+                    <b class="parrafo_title">PERMUTACIONES CON REPETICIÓN.</b> <br>
                     También se denominan como pruebas con sustitución. Son eventos en los cuales se toman un objeto del
                     conjunto y este puede ser nuevamente tomado en cuenta en la ordenación.
                     <b>Este concepto se aplica a la construcción de números</b> ya que pueden haber dígitos repetidos
@@ -307,7 +307,7 @@
                     <div class="center">
                         <div class="parrafo text-center center back-orange-alpha vw-80">
                             \(N = n \cdot n \cdot ... \cdot n = n^r\) <br>
-                            <i class="coment">#Primera gran Formula</i> <br>
+                            <i class="coment">#Primera gran Formula</i>
                             <i>En resumen la formula abarca la multiplicación de los \(n\) elementos multiplicandolo \(r\) veces</i>
                         </div>
                     </div>
@@ -334,12 +334,8 @@
                     </p> <br>
                     \(n^2 = 2^8 = 256\) codigos de 8bits
                 </div>
-            </div>
-            <div class="ref" id="con_5"></div>
-            <h2 class="separador back-purplelight-p1">Varaciones</h2>
-            <div class="subtheme-container back-white-1">
                 <p class="parrafo">
-                    <b>PERMUTACIONES SIN REPETICION</b>. <br>
+                    <b class="parrafo_title">PERMUTACIONES SIN REPETICION</b>. <br>
                     También se denominan como pruebas sin sustitución. Son eventos en los cuales se toma un objeto de un
                     conjunto, y este no se vuelve a considerar en otra permutación, sino que se toma un segundo objeto.
                     <b>Este concepto se aplica al ejemplo de los medalleros</b> donde su posición importa y no pueden haber
@@ -352,7 +348,7 @@
                     El \(r\) - esimo componenete puede ser cualquiera de los \((n - r + 1)\) objetos
                     <div class="center">
                         <div class="parrafo center back-orange-alpha vw-80">
-                            \(V(n, r) = \tfrac{n!}{(n-r)!}\)
+                            \(V(n, r) = \tfrac{n!}{(n-r)!}\) <br>
                             <i class="coment">#Segunda gran formula con \(n \)</i>
                             <i class="text-center">Comenzamos de \(n\) hasta \(1\) y de \((n-r)\) hasta \(1\) que se resume en sus factoriales</i>
                         </div>
@@ -383,11 +379,11 @@
                     \(V(16, 2) = \tfrac{16!}{(16-2)!} = \tfrac{16!}{14!} = \tfrac{16 \cdot 15 \cdot 14!}{14!} = 240\) partidos
                 </div>
             </div>
-            <div class="ref" id="con_6"></div>
-            <h1 class="separador back">Casos especiales</h1>
+            <div class="ref" id="con_5"></div>
+            <h1 class="separador back back-color-20">Casos especiales</h1>
             <div class="subtheme-container back-white-1">
                 <p class="parrafo">
-                    <b>Permutaciones circulares</b> <br>
+                    <b class="parrafo_title">Permutaciones circulares</b> <br>
                     Consideremos una estructura circular en las que se acumulan \(n\) objetos, como la estructura es circular
                     se establece que no existe un "primer lugar o un segundo lugar" de esa manera tenemos que: <br>
                     El primer objeto se posiciona de "una sola forma"; <br>
@@ -430,7 +426,7 @@
                     no cambia, ya que no existe un "primer elementos" ya que varia de la forma en la que lo veamos.
                 </p>
                 <p class="parrafo">
-                    <b>PERMUTACIONES EN LA QUE ALGUNOS DEL CONJUNTO BASE SE REPITEN.</b> <br>
+                    <b class="parrafo_title">PERMUTACIONES EN LA QUE ALGUNOS DEL CONJUNTO BASE SE REPITEN.</b> <br>
                     Es cuando tenemos que en las permutaciones hay algunos elementos repetidos del anterior.
                     <div class="formula vw-80">
                         <p>
@@ -457,7 +453,7 @@
                     <div class="center">
                         <div class="center parrafo back-orange-alpha vw-80 text-center">
                             \(N = \tfrac{n!}{n_{1}! \cdot n_{2}! \cdot n_{3}! \cdot ... n_{k}!}\)
-                            \(N = n_{1}! + n_{2}! + n_{3}! + ... + n_{k}!\)
+                            \(N = n_{1}! + n_{2}! + n_{3}! + ... + n_{k}!\) <br>
                             <i class="coment">#Ambas expresiones son equivalentes entre si</i>
                             <p>
                                 Donde \(n_{k}\) son los elementos que se repiten
@@ -517,6 +513,264 @@
                         </p> <br>
                         \(N = \tfrac{8!}{5! \cdot 3!} = \tfrac{8 \cdot 7 \cdot 6 \cdot 5!}{5! \cdot 6} = 8*7 = 56\)
                         <i class="coment">Existen 56 bytes que contienen cinco unos</i>
+                    </div>
+                </p>
+            </div>
+            <div class="ref" id="con_6"></div>
+            <h1 class="separador back-yellow">Combinaciones</h1>
+            <div class="subtheme-container back-white-1">
+                <p class="parrafo">
+                    Esta es una disposición de objetos en los cuales <b>el orden no interesa</b> por consecuencia
+                    tenemos \((A,B) = (B, A)\), el concepto se aplica a cualquier conjunto y este además puede
+                    ser <b>con repetición o sin repetición</b>.
+                </p>
+                <p class="parrafo">
+                    <b class="parrafo_title">COMBINACIONES SIN REPETICIÓN</b> <br>
+                    Una combinación de \(n\) objetos tomados de \(r\) en \(r\) se denota como \(C(n, r)\). Es cualquier elección
+                    de \(r\) objetos de los \(n\) posibles, en los cuales el orden no interesa y su cantidad está dada por la
+                    siguiente relación:
+                    <div class="center">
+                        <div class="center vw-80 parrafo back-orange-alpha">
+                            \(C(n, r) = \tfrac{n!}{(n-r)! \cdot r!}\) <br>
+                            <i class="coment">#Tercera gran formula</i>
+                            <p>
+                                Donde si o si \(n \geq r\) para que se cumpla la relación
+                            </p>
+                        </div>
+                    </div>
+                    <div class="formula vw-80 parrafo">
+                        <h3>Características</h3>
+                        <ul class="parrafo">
+                            <li>El orden no importa, osea \((A, B) = (B, A)\)</li>
+                            <li>No hay repetición</li>
+                        </ul>
+                    </div>
+                </p>
+                <p class="parrafo">
+                    Practicamente la combinacion sin repetición es cuando no importa el orden, no todos los elementos
+                    se incluyen y no hay repetición de elementos.
+                    <div class="formula vw-80">
+                        <p>
+                            <b class="text-red">Ej.</b>
+                            ¿Cuántos partidos de fútbol juegan 10 equipos en un torneo todos contra todos y sin revancha?
+                            <i class="coment">#Sin revancha, entonces no hay repeticiones</i>
+                            10 equipos \(\rightarrow n = 10\) <br>
+                            2 equipos por partido \(\rightarrow r = 2\) <br>
+                            Sabiendo esto podemos tener el "recuento" de todos los partidos sin revancha.
+                        </p> <br>
+                        \(C(10, 2) = \tfrac{10!}{(10-2)! \cdot 2!} = \tfrac{10!}{8! \cdot 2!} = \tfrac{90}{2} = 45\)
+                        <i class="coment">#Tenemos 45 partidos sin repetición de equipos</i> <br> <br>
+                        <p>
+                            <b class="text-red">Ej.</b>
+                            Consideremos un conjunto de 10 libros {A, B, C, D, E, F, G, H, I, J} <br>
+                            \(a)\) ¿Cuántas opciones de elegir 4 libros existen? <br>
+                            \(b)\) Un libro en específico se incluye simpre entre los 4 libros <br>
+                            \(c)\) Un libro en específico se excluye simpre en la elección <br>
+                        </p> <br>
+                        <p>
+                            <b>Sol \(a)\)</b> <br>
+                            Tenemos 10 libros \(\rightarrow n = 10\) <br>
+                            Elegimos 4 libros \(\rightarrow r = 4\) <br>
+                            Sabiendo esto podemos dar con el "recuento" de opciones: <br> <br>
+                            \(C(10, 4) = \tfrac{10!}{(10-4)! \cdot 4!} = \tfrac{10!}{8! \cdot 4!} = 210\)
+                            <i class="coment">#Existen 210 opciones de elegir 4 libros</i>
+                        </p> <br>
+                        <p>
+                            <b>Sol \(b)\)</b> <br>
+                            De los cuatro libros que vamos a elegir un se incluye en específico, entonces
+                            la cantidad a elegir es de 9 libros por que ya elegimos uno y la cantidad
+                            de elección es de 3 por que ya elegimos uno.
+                            <div class="center parrafo">
+                                <img src="../../assets/img/mat_dis2-con_ej4.jpg" alt="">
+                            </div>
+                            Tenemos 9 libros \(\rightarrow n = 9\) <br>
+                            Elegimos 3 libros \(\rightarrow r =3\) <br>
+                            Sabiendo que ya elegimos uno y nos quedan 3 por elegir de 9 obtenemos el "recuento": <br> <br>
+                            \(C(9, 3) = \tfrac{9!}{(9-3)! \cdot 3!} = \tfrac{9!}{6! \cdot 3!} = 84\)
+                            <i class="coment">#84 opciones de elegir 3 libros de 9</i>
+                        </p> <br>
+                        <p>
+                            <b>Sol \(c)\)</b> <br>
+                            De los 10 libros eliminamos uno de nuestras opciones por lo que solo consideramos
+                            9 libros para elegir 4 de ellos. <br>
+                            Tenemos 9 libros \(\rightarrow n = 9\) <br>
+                            Elegimos 4 libros \(\rightarrow r = 4\) <br>
+                            Sabiendo esto obtenemos el "recuento" de opciones: <br> <br>
+                            \(C(9, 4) = \tfrac{9!}{(9-4)! \cdot 4!} = \tfrac{9!}{5! \cdot 4!} = 126\)
+                            <i class="coment">#tenemos 126 opciones de elegir 4 libros de enetre 9</i>
+                        </p>
+                    </div>
+                </p>
+                <p class="parrafo">
+                    Este concepto se aplica a la definición de conjunto, especificamente eb ka cardinalidad del conjunto potencia
+                    \(P(A)\) que es un conjunto de conjuntos de \(A\) que es un conjunto.
+                    <div class="formula vw-80">
+                        <p>
+                            Consideremos el conjunto \(G = \{A, B, C, D, E\}\) donde tenemos lo siguiente: <br>
+                            Tenemos 5 objetos \(\rightarrow n = 5\) <br>
+                            Tomamos a elección con el criterio de \(n \geq r\) osea: <br> <br>
+                            \(C(n, 0) + C(n, 1) + C(n, 2) + ... + C(n, n) = 2^n = P(G)\) <br>
+                            Ahora notemos que tenemos lo siguiente: <br>
+                            <ul class="parrafo">
+                                <li>Subconjuntos de 0 elementos \(\rightarrow C(5, 0) = 1\)</li>
+                                <li>Subconjuntos de 1 elementos \(\rightarrow C(5, 1) = 5\)</li>
+                                <li>Subconjuntos de 2 elementos \(\rightarrow C(5, 2) = 10\)</li>
+                                <li>Subconjuntos de 3 elementos \(\rightarrow C(5, 3) = 10\)</li>
+                                <li>Subconjuntos de 4 elementos \(\rightarrow C(5, 4) = 5\)</li>
+                                <li>Subconjuntos de 5 elementos \(\rightarrow C(5, 5) = 1\)</li>
+                            </ul>
+                            Pues si vemos el resultado de todas las combinaciones llega a formar un patron
+                            que podemos asociar con el triángulo de pascal:
+                            <div class="center parrafo">
+                                <img class="w-200" src="../../assets/img/mat_dis2-con_ej5.jpg" alt="">
+                            </div>
+                        </p>
+                    </div>
+                </p>
+                <p class="parrafo">
+                    Lo que vimos hace un momento se puede aplicar a problemas que involucren terminos como mínimo, máximo
+                    al menos, etc. Por otro lado lo del triángulo de pascal nos puede dar una idea de como podemos
+                    inducir el resultado de una combinación con lo ya visto.
+                    <div class="formula vw-80">
+                        <p>
+                            <b class="text-red">Ej.</b>
+                            Consideremos un conjunto de 5 estudiantes \(\{a, b, c, d, e\}\).
+                            Se pretende elegir grupos de 3 <b>o más</b> estudiantes, ¿cuántas opciones
+                            de elección existen? <br>
+                            Pueden ser 3 o más, osea pueden ser 4, pueden ser 5, pero no pueden ser de 6
+                            ya que no hay 6 estudiantes, ya que debemos seguir el criterio de \(n \geq r\) <br>
+                            Hay 5 estudiantes \(\rightarrow n = 5\) <br>
+                            Puede elegirse de 3, 4 o de 5, entonces por la regla de la suma tendremos:
+                        </p> <br>
+                        \(C(5, 3) + C(5, 4) + C(5, 5)\) <br>
+                        \(10 + 5 + 1 = 16\)
+                        <i class="coment">#Tenemos 16 opciones de elegir grupos de 3 o de 4 o de 5</i> <br> <br>
+                        <p>
+                            <b class="text-red">Ej.</b>
+                            Del anteror ejemplo pero con grupos de <b>a lo más</b> de 2 <br>
+                            Osea tenemos un máximo de 2 integrantes para un grupo <br>
+                            pueden ser de 0, puede ser de 1, puede ser de 2, pero no de 3 ya que es más que 2 <br>
+                            Tenemos 5 estudiantes \(\rightarrow n = 5\) <br>
+                            Puede elegirse de 0, 1 y 2, entonces por la regla de la suma tenemos: <br>
+                        </p> <br>
+                        \(C(5, 0) + C(5, 1) + C(5, 2)\) <br>
+                        \(1 + 5 + 10 = 16\)
+                        <i class="coment">#Tenemos 16 opciones de grupos de 0 o 1 o 2</i> <br> <br>
+                        <p>
+                            <b class="text-red">Ej.</b>
+                            Con 4 profesores y 8 alumnos, ¿cuántos grupos de 6 pueden formarse tal que en cada
+                            grupo se incluya un profesor y solo uno? <br>
+                            Podemos considerarlo como un evento de 2 pasos donde tenemos lo siguiente:
+                            <ul class="parrafo">
+                                <li>Paso 1 - Elegir un profesor de los 4 posibles</li>
+                                <li>Paso 2 - Elegir cinco estudiantes de 8 posibles</li>
+                            </ul>
+                            Con un profesor y cinco estudiantes completamos los 6 integrantes del grupo que necesitamos,
+                            entonces por la regla del producto tenemos:
+                        </p> <br>
+                        \(C(4, 1) \cdot C(8, 5)\) <br>
+                        \(4 \cdot 56 = 224\)
+                        <i class="comnet">#Por cada profesor hay 56 posibles grupos</i>
+                    </div>
+                </p>
+                <p class="parrafo">
+                    <b class="parrafo_title">COMBINACIONES CON REPETICIÓN</b> <br>
+                    Pueden o no repetirse, haciendolo 2, 3 o más veces; el parámetro de repetición
+                    no se considera en la expreción. El número de combinaciones con repetición de \(n\)
+                    objetos tomados de \(r\) en \(r\) está dada por la siguiente expresión:
+                    <div class="center">
+                        <div class="parrafo vw-80 back-orange-alpha center">
+                            \(C(n+r-1, r) = \tfrac{(n+r-1)!}{[(n-1) - r]! \cdot r!}\) <br>
+                            <i class="coment">#Podemos procederlo directo en el parametro y no en el proceso</i>
+                            <p>
+                                Donde es la misma formula con diferente parametro
+                            </p>
+                        </div>
+                    </div>
+                    <div class="formula vw-80">
+                        <p>
+                            <b class="text-red">Ej.</b>
+                            ¿Cuántas y cuáles son las combinaciones con repetición de 4 objetos tomados de 3 en 3? <br>
+                            Tenemos 4 objetos \(\rightarrow n = 4\) <br>
+                            Tomamos 3 objetos \(\rightarrow r = 3 \) <br>
+                            Sabiendo esto tenemos lo siguiente:
+                        </p> <br>
+                        \(C(n+r-1, r) = C(4+3-1, 3) = C(6, 3) = 20\) <br>
+                        <i class="coment">#Tenemos 20 combinaciones con repetición</i> <br>
+                        <p>
+                            Ahora para la "enumeración" consideremos el conjunto de 4 objetos \(\{A, B, C, D\}\)
+                            <ul class="parrafo">
+                                <li>
+                                    No se repite <br>
+                                    <p>
+                                        \((A, B, C) (A, B, D) (A, C, D) (B, C, D)\)
+                                    </p>
+                                </li>
+                                <li>
+                                    Se repite dos veces <br>
+                                    <p>
+                                        \((A, A, B) (A, A, C) (A, A, D)\) <br>
+                                        \((B, B, A) (B, B, C) (B, B, D)\) <br>
+                                        \((C, C, A) (C, C, B) (C, C, D)\) <br>
+                                        \((D, D, A) (D, D, B) (D, D, C)\)
+                                    </p>
+                                </li>
+                                <li>
+                                    Se repite tres veces <br>
+                                    <p>
+                                        \((A, A, A) (B, B, B) (C, C, C) (D, D, D)\)
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                        <P> <br> <br>
+                            <b class="text-red">Ej.</b>
+                            ¿Cuántos y cuáles son las combinaciones con repetición de 4 objetos tomados de 4 en 4? <br>
+                            Tenemos 4 objetos \(\rightarrow n = 4\) <br>
+                            Tomamos 4 objetos \(\rightarrow r = 4\) <br>
+                            Sabiendo esto podemos tener el "recuento" de las combinaciones.
+                        </P>
+                        \(C(n+r-1, r) = C(4+4-1, 4) = C(7, 4) = 35\)
+                        <i class="coment">#Tenemos 35 combinaciones con repetición</i> <br>
+                        <p>
+                            Ahora veamos como seria la "enumeración" de las 35 combinaciones
+                            por lo que consideremos el conjuntos \(\{A, B, C, D\}\),
+                            veamos todos los casos que tenemos en las combinaciones.
+                            <ul class="parrafo">
+                                <li>
+                                    No se repite <br>
+                                    <p>
+                                        \((A, B, C, D)\)
+                                    </p>
+                                </li>
+                                <li>
+                                    Se repite dos veces <br>
+                                    <p>
+                                        \((A, A, B ,C) (A, A, B, D) (A, A, C, D)\) <br>
+                                        \((B, B, A, C) (B, B, A, D) (B, B, C, D)\) <br>
+                                        \((C, C, A, B) (C, C, A, D) (C, C, B, D)\) <br>
+                                        \((D, D, A, B) (D, D, A, C) (D, D, B, C)\) <br>
+                                        \((A, A, B, B) (A, A, C, C) (A, A, D, D)\) <br>
+                                        \((B, B, C, C) (B, B, D, D) (C, C, D, D)\) <br>
+                                    </p>
+                                </li>
+                                <li>
+                                    Se repite tres veces <br>
+                                    <p>
+                                        \((A, A, A, B) (A, A, A, C) (A, A, A, D)\) <br>
+                                        \((B, B, B, A) (B, B, B, C) (B, B, B, D)\) <br>
+                                        \((C, C, C, A) (C, C, C, B) (C, C, C, D)\) <br>
+                                        \((D, D, D, A) (D, D, D, B) (D, D, D, C)\) <br>
+                                    </p>
+                                </li>
+                                <li>
+                                    Se repite cuatro veces <br>
+                                    <p>
+                                        \((A, A, A, A) (B, B, B, B) (C, C, C, C) (D, D, D, D)\)
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
                     </div>
                 </p>
             </div>

@@ -19,6 +19,14 @@
   --color-12: #11aa00;
   --color-13: #9b5de5;
   --color-14: #7733ff;
+  --color-15: #2a9d8f;
+  --color-16: #264653;
+  --color-17: #f5ebe0;
+  --color-18: #d5bdaf;
+  --color-19: #bb9457;
+  --color-20: #06d6a0;
+  --color-21: #b5179e;
+  --color-22: #003f88;
   --s-color-1: #390099;
   --s-color-2: #aa33ff;
   --s-color-3: #f15bb5;
@@ -45,6 +53,20 @@ body{
 .back-black-2{
   background-color: var(--main-color-2);
   color: var(--wgb-1-1);
+}
+
+
+.back-color-19{
+  background-color: var(--color-19);
+}
+.back-color-20{
+  background-color: var(--color-20);
+}
+.back-color-21{
+  background-color: var(--color-21);
+}
+.back-color-22{
+  background-color: var(--color-22);
 }
 
 
